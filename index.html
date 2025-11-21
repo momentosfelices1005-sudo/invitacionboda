@@ -419,7 +419,7 @@
 
   <!-- 🕊️ Pantalla de bienvenida -->
   <div id="pantallaBienvenida">
-    <img src="sobre.png" id="btnAbrir" alt="Abrir invitación" />
+    <img src="/sobre.png" id="btnAbrir" alt="Abrir invitación" />
     <p style="margin-top: 16px;">Toca el sobre para abrir tu invitación</p>
   </div>
 
@@ -448,14 +448,14 @@
 
       <br><br>
 
-      <p class="manuscrita">17 de Noviembre del 2025</p>
+      <p class="manuscrita">26 de Diciembre del 2025</p>
 
       <!-- ❤️ Corazón con música -->
       <button id="playPauseBtn" aria-label="Reproducir música">
         <i class="bi bi-heart-fill heart" aria-hidden="true"></i>
         <i class="bi bi-play-fill icon" id="iconPlayPause" aria-hidden="true"></i>
       </button>
-      <audio id="audioPlayer" src="music.mp3"></audio>
+      <audio id="audioPlayer" src="/music.mp3"></audio>
     </div>
 
     <p style="padding: 0% 8%; ">
@@ -479,10 +479,10 @@
 
     <!-- Fecha elegante (más grande) -->
     <div class="fecha-elegante fecha-elegante-grande" style="margin-top: 28px;">
-      <div class="mes" >NOVIEMBRE</div>
+      <div class="mes" >DICIEMBRE</div>
       <div class="contenido">
         <span class="dia-texto">SÁBADO</span>
-        <div class="dia-numero">17</div>
+        <div class="dia-numero">26</div>
         <span class="hora">20:00 PM</span>
       </div>
       <div class="anio">2025</div>
@@ -495,7 +495,7 @@
         <div class="dia-numero" style="font-size: 2.4rem;">17:00</div>
         <p class="manuscrita" style="font-size: 1.9rem;">Ceremonia Religiosa</p>
         <span style="font-size: 17px; font-weight:500;">Iglesia San Alfonso</span>
-        <p style="font-size: 16px;">Calle Simón Bolivar y Hermano Miguel</p>
+        <p style="font-size: 16px;">Eloy Alfaro y Juan Leon Mera</p>
         <button class="btn btn-secondary" style="margin-top:8px;" data-bs-toggle="modal" data-bs-target="#ubicacionModal">Ver ubicación</button>
       </div>
     </section>
@@ -507,8 +507,8 @@
       <div style="display:flex; flex-direction:column; align-items:center; gap:6px; margin-top:12px;">
         <div class="dia-numero" style="font-size: 2.4rem;">20:00</div>
         <p class="manuscrita" style="font-size: 1.9rem;">Celebración</p>
-        <span style="font-size: 17px; font-weight:500;">Salón de eventos Rancho Grande</span>
-        <p style="font-size: 16px;">Via Turi Km 17</p>
+        <span style="font-size: 17px; font-weight:500;">Club de obreros</span>
+        <p style="font-size: 16px;">Eloy Alfaro y Juan Leon Mera</p>
         <button class="btn btn-secondary" style="margin-top:8px;" data-bs-toggle="modal" data-bs-target="#ubicacionModal2">Ver ubicación</button>
       </div>
     </section>
@@ -569,8 +569,7 @@
         <p style="text-align: left; font-size: 16px">
           <strong>Banco:</strong> Mutualista Azuay <br>  
           <strong>Titular:</strong> Estefanía Michelle Arevalo Sánches  <br>
-          <strong>Cuenta de ahorros:</strong> 4156465456 <br>
-          <strong>Cédula:</strong> 0104987589 <br>
+          <strong>Cuenta:</strong> 4156465456 <br>
         </p>
 
 
@@ -584,7 +583,7 @@
       <img src="corazon.png" class="img-fluid" alt="Separador">
       <div style="display:flex; flex-direction:column; align-items:center; gap:6px; margin-top:12px;">
         <img src="confirmacion.png" class="img-fluid" alt="Iglesia">
-        <p class="manuscrita" style="font-size: 1.9rem;">Confirma tu asistencia</p>
+        <p class="manuscrita" style="font-size: 1.9rem;">Confirrma tu asistencia</p>
       
         <div style="padding: 0 8%;">
           <p style="font-size: 16px;">Para organizar todo con tranquilidad y cariño, les pedimos que por favor confirmen su asistencia <strong> antes del 2 de Noviembre </strong>. Nos alegrará mucho compartir este día junto a ustedes.</p>
@@ -694,7 +693,7 @@
 
 
 
-      <!-- Modal Confirmar Asistencia -->
+          <!-- Modal Confirmar Asistencia -->
 <div class="modal fade" id="confirmarModal" tabindex="-1" aria-labelledby="confirmarModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -703,17 +702,24 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
       <div class="modal-body">
+
+        <p>Estaremos felices de que nos acompañes en este momento tan espcial en nuestras vidas. Por favor, confirma tu asistencia.</p>
+
+
+        <img src="corazon.png" class="img-fluid" alt="Corazón" style="margin-top: 16px; ">
+
+
         <form id="formConfirmar" novalidate>
           <div class="mb-3">
             <label for="nombre" class="form-label" style="font-size: 17px;">Ingresa tu nombre</label>
-            <input style="font-size: 17px;" type="text" class="form-control" id="nombre" placeholder="Ej: Luis Cárdenas" required>
+            <input style="font-size: 17px;" type="text" class="form-control" id="nombre" placeholder="" required>
             <div class="invalid-feedback">
               Por favor ingresa un nombre válido (solo letras y espacios).
             </div>
           </div>
           <div class="mb-3">
-            <label for="acompanantes" class="form-label" style="font-size: 17px;">Cantidad de acompañantes (máx. 2)</label>
-            <input type="number" class="form-control" id="acompanantes" placeholder="0" min="0" max="2" style="font-size: 17px;">
+            <label for="acompanantes" class="form-label" style="font-size: 17px;">Ingresa la cantidad de personas que te acompañarán (máx. 2)</label>
+            <input type="number" class="form-control" id="acompanantes" placeholder="" min="0" max="2" style="font-size: 17px;">
             <div class="invalid-feedback">
               Debe ser un número entre 0 y 2.
             </div>
@@ -777,7 +783,7 @@
     const mEl = document.getElementById('m');
     const sEl = document.getElementById('s');
     const countdownContainer = document.getElementById('countdown');
-    const target = new Date('2025-11-17T17:00:00');
+    const target = new Date('2025-12-16T17:00:00');
 
     function actualizarContador() {
       const now = new Date();
@@ -866,10 +872,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
